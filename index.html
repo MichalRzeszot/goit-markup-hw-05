@@ -24,7 +24,7 @@
         >
         <nav class="nav">
           <ul class="nav-layout">
-            <li><a class="nav-menu" href="./index.html">Studio</a></li>
+            <li><a class="nav-menu underline" href="./index.html">Studio</a></li>
             <li><a class="nav-menu" href="./portfolio.html">Portfolio</a></li>
             <li><a class="nav-menu" href="#">Contacts</a></li>
           </ul>
@@ -43,9 +43,23 @@
           <h1 class="main-heading main-navy-content">
             Effective Solutions For Your Business
           </h1>
-          <button type="button" class="main-button button-layout">
+          <button
+            type="button"
+            class="main-button button-layout"
+            data-modal-open
+          >
             Order Service
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="close-button" data-modal-close>
+                <svg height="8px" width="8px">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -416,5 +430,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
