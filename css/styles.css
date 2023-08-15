@@ -332,6 +332,9 @@ body {
   cursor: pointer;
   border: 1px solid #0000001a;
   padding-bottom: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover {
   background-color: var(--portfolio-button);
@@ -370,12 +373,24 @@ body {
   border-top: none;
 }
 .image-slider {
+  display: flex;
+  justify-content: center;
   position: absolute;
   inset: 0;
   background-color: var(--orderservice-and-logospan-color);
   color: #fff;
   translate: 0 100% 0;
   transition: translate 250ms;
+}
+.slider-description {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  width: 296px;
+  margin-top: 40px;
 }
 .portfolio-section-layout {
   padding-top: 96px;
