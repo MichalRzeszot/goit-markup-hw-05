@@ -379,6 +379,7 @@ body {
   inset: 0;
   background-color: var(--orderservice-and-logospan-color);
   color: #fff;
+  opacity: 90%;
   translate: 0 100% 0;
   transition: translate 250ms;
 }
