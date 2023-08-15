@@ -146,20 +146,22 @@ body {
   justify-content: center;
   margin-bottom: 72px;
 }
-.portfolio-image-hover {
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .portfolio-image-hover:hover .image-slider {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   translate: 0;
 }
 .portfolio-list-relative {
   position: relative;
   overflow: hidden;
+}
+.portfolio-shadow {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-shadow:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .logo {
   font-size: 18px;
@@ -189,7 +191,7 @@ body {
   background-color: var(--portfolio-button);
   height: 4px;
   width: 100%;
-  bottom: -20px;
+  bottom: -24px;
   left: 0px;
   border-radius: 2px;
   position: absolute;
@@ -199,7 +201,7 @@ body {
   background-color: var(--portfolio-button);
   height: 4px;
   width: 100%;
-  bottom: -20px;
+  bottom: -24px;
   left: 0px;
   border-radius: 2px;
   position: absolute;
@@ -443,6 +445,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  cursor: pointer;
 }
 .icon-Client {
   fill: #8e8f99;
