@@ -470,6 +470,7 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .background-icons-tm {
   width: 40px;
@@ -488,6 +489,7 @@ body {
 .background-icons-tm:hover,
 .background-icons-tm:focus {
   background-color: rgba(64, 75, 191, 1);
+  cursor: pointer;
 }
 .background-icon-ft:hover,
 .background-icon-ft:focus {
